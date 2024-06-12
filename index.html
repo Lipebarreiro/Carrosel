@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Carrossel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="carrosel-container">
+        <div class="container">
+            <h1>THE LAST OF US ARTS</h1>
+
+            <div class="fade">
+                <div class="n_text"> 1 / 4 </div>
+                <img src="img/img_01.jpg" alt="Arte 1">
+                <div class="i_text"> Arte 1 </div>
+            </div>
+
+            <div class="fade">
+                <div class="n_text"> 2 / 4 </div>
+                <img src="img/img_02.jpeg" alt="Arte 2">
+                <div class="i_text"> Arte 2 </div>
+            </div>
+
+            <div class="fade">
+                <div class="n_text"> 3 / 4 </div>
+                <img src="img/img_03.jpg" alt="Arte 3">
+                <div class="i_text"> Arte 3 </div>
+            </div>
+
+            <div class="fade">
+                <div class="n_text"> 4 / 4 </div>
+                <img src="img/img_04.jpeg" alt="Arte 4">
+                <div class="i_text"> Arte 4 </div>
+            </div>
+
+            <a class="prev" onclick="plus_slides(-1)"> &#10094; </a>
+            <a class="next" onclick="plus_slides(1)"> &#10095; </a>
+        </div>
+
+        <div class="dot_box">
+            <span class="dot" onclick="current_slides(1)"></span>
+            <span class="dot" onclick="current_slides(2)"></span>
+            <span class="dot" onclick="current_slides(3)"></span>
+            <span class="dot" onclick="current_slides(4)"></span>
+        </div>
+    </div>
+</body>
+
+</html>

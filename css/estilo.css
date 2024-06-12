@@ -1,0 +1,103 @@
+body {
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+}
+
+h1{
+    box-shadow: 2px 2px 4px #000000;
+    color: #ffffff; 
+}
+
+.carrosel-container {
+    text-align: center;
+}
+
+.container {
+    max-width: 720px;
+    position: relative;
+    margin: auto;
+}
+
+.container img {
+    width: 100%;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 28px;
+    background-color: #000000a2;
+    color: #ffffff;
+    transition: 0.6s;
+    user-select: none;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #000000;
+    transition: 0.6s;
+}
+
+.n_text {
+    box-shadow: 2px 2px 4px #181818;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 4px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.i_text {
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0px;
+    position: absolute;
+    bottom: 0;
+}
+
+.dot_box {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #727385;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s;
+}
+
+.active,
+.dot:hover {
+    background-color: #e6e6e6;
+    transition: 0.6s;
+}
